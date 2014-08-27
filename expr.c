@@ -302,6 +302,9 @@ void doop(struct op_s *p)
 
 /*
  * Evaluate an expression
+ * Based on the Shunting Yard algorithm.
+ * More information can be found here: http://en.literateprograms.org/Shunting_yard_algorithm_(C)
+ * Source Example: http://en.literateprograms.org/index.php?title=Special:DownloadCode/Shunting_yard_algorithm_(C)&oldid=18970
  */
 int eval_expr(char *buf, char **outptr, int *value, int op_expected, int *reg)
 {
